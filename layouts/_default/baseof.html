@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/home.css" | relURL }}">
 </head>
 <body>
 <header class="topbar"><a class="brand" href="{{ "/" | relURL }}"><b>A</b><strong>AWS <small>/ report</small></strong></a><span class="program">● First Cloud AI Journey <i>/</i> 2026</span><span class="top-link">BÁO CÁO THỰC TẬP ↗</span></header>
@@ -16,7 +17,7 @@
   <a class="{{ if .IsHome }}active{{ end }}" href="{{ "/" | relURL }}"><em>00</em>Tổng quan</a>
   {{ $items := slice (dict "n" "01" "t" "Nhật ký công việc" "u" "/1-worklog/") (dict "n" "02" "t" "Bản đề xuất" "u" "/2-proposal/") (dict "n" "03" "t" "Các bài blogs đã đăng" "u" "/3-blogsposted/") (dict "n" "04" "t" "Các events đã tham gia" "u" "/4-eventparticipated/") (dict "n" "05" "t" "Workshop" "u" "/5-workshop/") (dict "n" "06" "t" "Tự đánh giá" "u" "/6-self-evaluation/") (dict "n" "07" "t" "Chia sẻ, đóng góp" "u" "/7-feedback/") }}
   {{ range $item := $items }}<a class="{{ if eq $.RelPermalink $item.u }}active{{ end }}" href="{{ $item.u | relURL }}"><em>{{ $item.n }}</em>{{ $item.t }}<span>↗</span></a>{{ end }}
-</nav><div class="side-info"><label>THÔNG TIN</label><strong>Lê Anh Tuấn</strong><small>CNPM · 22DTHE4</small><small>tle263036@gmail.com</small></div></aside>
-<main class="content"><div class="inner">{{ block "main" . }}{{ end }}</div><footer>BÁO CÁO THỰC TẬP / AWS VIỆT NAM <span>05.05.2026 — 30.07.2026</span></footer></main>
+</nav><div class="side-info"><label>THÔNG TIN</label><strong>Lê Anh Tuấn</strong><small>CNPM · 68CNPM</small><small>tle263036@gmail.com</small></div></aside>
+<main class="content"><div class="inner">{{ block "main" . }}{{ end }}</div><footer>BÁO CÁO THỰC TẬP / AWS VIỆT NAM <span>03.08.2026 — 09.09.2026</span></footer></main>
 </div>
 </body></html>
