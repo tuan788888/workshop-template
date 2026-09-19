@@ -1,0 +1,1 @@
+{{ define "main" }}<article><p class="eyebrow">— BÁO CÁO THỰC TẬP / {{ .Title | upper }}</p><h1>{{ .Title }}</h1>{{ .Content }}{{ if .Pages }}<div class="subpages">{{ range .Pages.ByWeight }}<a href="{{ .RelPermalink }}"><span>{{ printf "%02d" .Weight }}</span><strong>{{ .Title }}</strong><b>↗</b></a>{{ end }}</div>{{ end }}</article>{{ end }}

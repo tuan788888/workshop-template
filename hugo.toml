@@ -1,0 +1,7 @@
+baseURL = '/'
+languageCode = 'vi-vn'
+title = 'Báo cáo thực tập | Lê Anh Tuấn'
+relativeURLs = true
+
+[markup.goldmark.renderer]
+unsafe = true
